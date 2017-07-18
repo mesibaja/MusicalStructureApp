@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MusicalStructureApp-Udacity</string>
+    <string name="main_text">Mit szeretnél lejátszani</string>
+    <string name="gyerekdalok">Válassz gyerekdalt magadnak</string>
+    <string name="nepdalok">Válassz népdalt magadnak</string>
+    <string name="poprock">Válassz poprockot magadnak</string>
+    <string name="now_playing">Playing</string>
+    <string name="list">Dal lista</string>
+    <string name="main">This is the main screen where you can choose /n from the different Hungarian music, such as folklore, /n nursery rhymes and poprock. You can navigate to the music list /n with the button at the bottom and you can start playing the music by pressing the play icon. </string>
+</resources>
