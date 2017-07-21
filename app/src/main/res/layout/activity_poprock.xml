@@ -6,18 +6,26 @@
     android:background="@drawable/whole_background"
     tools:context="com.lehoczky.petra.android.musicalstructureapp.PoprockActivity">
 
+    //Poprock Activity page
+
     <ImageView
         style="@style/backgroundImage"
         android:src="@drawable/notes" />
+
+    //Choose Poprock for yourself
 
     <TextView
         android:id="@+id/question"
         style="@style/description"
         android:text="@string/poprock" />
 
+    //Navigation on the page
+
     <LinearLayout
         android:id="@+id/navigate"
         style="@style/iconsTop">
+
+        //Random song choices
 
         <ImageView
             android:id="@+id/random"
@@ -26,12 +34,16 @@
 
         <View style="@style/view" />
 
+        //Previous song
+
         <ImageView
             android:id="@+id/previous"
             style="@style/icons"
             android:src="@drawable/previous" />
 
         <View style="@style/view" />
+
+        //Pause the song
 
         <ImageView
             android:id="@+id/pause"
@@ -40,12 +52,16 @@
 
         <View style="@style/view" />
 
+        //Next song
+
         <ImageView
             android:id="@+id/next"
             style="@style/icons"
             android:src="@drawable/next" />
 
     </LinearLayout>
+
+    //Activity in progress
 
     <ImageView
         style="@style/timer"
@@ -54,12 +70,16 @@
 
     <LinearLayout style="@style/iconsBottom">
 
+        //Song list
+
         <ImageView
             android:id="@+id/list"
             style="@style/icons"
             android:src="@drawable/list" />
 
         <View style="@style/view" />
+
+        //Now playing
 
         <ImageView
             android:id="@+id/nowPlaying"

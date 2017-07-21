@@ -6,13 +6,6 @@
     android:background="@drawable/whole_background"
     tools:context="com.lehoczky.petra.android.musicalstructureapp.MainActivity">
 
-    //Question for choosing an activity
-
-    <TextView
-        android:id="@+id/question"
-        style="@style/mainText"
-        android:labelFor="@+id/question" />
-
     <LinearLayout
         style="@style/iconsMagyar"
         android:layout_below="@+id/question">
@@ -44,12 +37,10 @@
 
     </LinearLayout>
 
-    //Description of the page
-
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/payment_description"
         style="@style/description"
-        android:text="@string/main" />
+        android:text="@string/payment_description"/>
 
     <LinearLayout style="@style/iconsBottom">
 
@@ -62,12 +53,12 @@
 
         <View style="@style/view" />
 
-        //Now Playing
+        //Now Buying
 
         <ImageView
-            android:id="@+id/now_playing"
+            android:id="@+id/now_buying"
             style="@style/icons"
-            android:src="@drawable/now_playing" />
+            android:src="@drawable/now_buying" />
     </LinearLayout>
 
 </RelativeLayout>

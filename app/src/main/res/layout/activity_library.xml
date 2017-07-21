@@ -6,12 +6,16 @@
     android:background="@drawable/whole_background"
     tools:context="com.lehoczky.petra.android.musicalstructureapp.LibraryActivity">
 
+    //Song list view
+
     <ListView
         android:id="@+id/list_playlists"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </ListView>
+
+    //Song list text view
 
     <TextView
         style="@style/description"
@@ -20,12 +24,16 @@
 
     <LinearLayout style="@style/iconsBottom">
 
+        //Home
+
         <ImageView
             android:id="@+id/home"
             style="@style/icons"
             android:src="@drawable/home" />
 
         <View style="@style/view" />
+
+        //Now playing
 
         <ImageView
             android:id="@+id/nowPlaying"
