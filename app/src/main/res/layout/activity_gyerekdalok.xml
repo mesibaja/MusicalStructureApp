@@ -13,7 +13,7 @@
     //Choose a nursery rhyme for yourself
 
     <TextView
-        android:id="@+id/question"
+        android:id="@+id/gyerekdalok"
         style="@style/description"
         android:text="@string/gyerekdalok" />
 

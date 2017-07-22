@@ -15,7 +15,7 @@
     //Choose Poprock for yourself
 
     <TextView
-        android:id="@+id/question"
+        android:id="@+id/poprock"
         style="@style/description"
         android:text="@string/poprock" />
 

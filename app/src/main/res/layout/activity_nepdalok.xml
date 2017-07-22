@@ -13,7 +13,7 @@
     //Choose a folklore song for yourself
 
     <TextView
-        android:id="@+id/question"
+        android:id="@+id/nepdalok"
         style="@style/description"
         android:text="@string/nepdalok" />
 

@@ -40,7 +40,7 @@
     <TextView
         android:id="@+id/payment_description"
         style="@style/description"
-        android:text="@string/payment_description"/>
+        android:text="@string/payment_description" />
 
     <LinearLayout style="@style/iconsBottom">
 
