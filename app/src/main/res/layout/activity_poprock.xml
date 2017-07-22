@@ -84,7 +84,7 @@
         <ImageView
             android:id="@+id/nowPlaying"
             style="@style/icons"
-            android:src="@drawable/nowplaying" />
+            android:src="@drawable/now_playing" />
     </LinearLayout>
 </RelativeLayout>
 
