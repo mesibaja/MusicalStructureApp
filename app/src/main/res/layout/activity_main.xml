@@ -65,9 +65,19 @@
         //Now Playing
 
         <ImageView
-            android:id="@+id/nowPlaying"
+            android:id="@+id/now_playing"
             style="@style/icons"
             android:src="@drawable/now_playing" />
+
+        <View style="@style/view" />
+        //Now Buying
+
+        <ImageView
+            android:id="@+id/now_buying"
+            style="@style/icons"
+            android:src="@drawable/now_buying" />
+
+        <View style="@style/view" />
     </LinearLayout>
 
 </RelativeLayout>

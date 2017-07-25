@@ -30,7 +30,10 @@
             android:label="Library" />
         <activity
             android:name="NowPlayingActivity"
-            android:label="Now Playing">
+            android:label="Now Playing" />
+        <activity
+            android:name="PaymentActivity"
+            android:label="Payment">
 
         </activity>
     </application>

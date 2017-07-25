@@ -1,7 +1,7 @@
 <resources>
 
     //Application name
-    <string name="app_name">MusicalStructureApp-Udacity</string>
+    <string name="app_name">Musical Structure App</string>
 
     //Translations to English from Hungarian for each string.
     //What would you like to play?
@@ -17,15 +17,15 @@
     <string name="poprock">Válassz poprockot magadnak</string>
 
     //Now playing function
-    <string name="now_playing">Playing</string>
+    <string name="now_playing">This screen is for showing you the playing activity of this app. \n When the music is turned on, it is playing.</string>
 
     //List of the songs
-    <string name="list">Dal lista</string>
+    <string name="list">List of the songs, where you can choose from the list of songs to play. \n You can start playing the songs by clicking the Play Button, you can choose Random playing, \n or hit the previous or the next song button.</string>
 
     //Main screen description
-    <string name="main">This is the main screen where you can choose /n from the different Hungarian music, such as folklore, /n nursery rhymes and poprock. You can navigate to the music list /n with the button at the bottom and you can start playing the music by pressing the play icon. </string>
+    <string name="main">This is the main screen where you can choose \n from the different Hungarian music, such as folklore, \n nursery rhymes and poprock. You can navigate to the music list \n with the button at the bottom and you can start playing the music by pressing the play icon. </string>
 
     //Payment description
-    <string name="payment_description">This activity is for the payments where the user can buy audio files. Android Pay would be used so a new dependency should be added to the project, com.google.android.gms:play-services-wallet:11.0.2 /n Then a payment processor is choosen, for ex. Braintree. Before processing the payment, a token should be requested using the PaymentMethodTokenizationParameters class. /n After having used the MaskedWalletRequest class, I have to retrieve the information to initiate the purchase (items in cart, shipping address ...). This masked Wallet object will be used to initialize Pay with... button /n With use of WalletSegments we can create a Pay with button and a confirmation screen. If the user has confirmed the payment, the FullWallet will be retrieved with a FullWalletRequest object. /n From the FullWallet object, I have enough information to proceed with the payment. /n Afterwards the payment request can be sent to the payment processor.</string>
+    <string name="payment_description">This activity is for the payments where the user can buy audio files. Android Pay would be used so a new dependency should be added to the project, com.google.android.gms:play-services-wallet:11.0.2 \n Then a payment processor is choosen, for ex. Braintree. Before processing the payment, a token should be requested using the PaymentMethodTokenizationParameters class. \n After having used the MaskedWalletRequest class, I have to retrieve the information to initiate the purchase (items in cart, shipping address ...). This masked Wallet object will be used to initialize Pay with... button \n With use of WalletSegments we can create a Pay with button and a confirmation screen. If the user has confirmed the payment, the FullWallet will be retrieved with a FullWalletRequest object. \n From the FullWallet object, I have enough information to proceed with the payment. \n Afterwards the payment request can be sent to the payment processor.</string>
 
 </resources>

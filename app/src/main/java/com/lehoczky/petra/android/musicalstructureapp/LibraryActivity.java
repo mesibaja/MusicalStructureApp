@@ -39,7 +39,7 @@ public class LibraryActivity extends AppCompatActivity implements AdapterView.On
         listTracks.setOnItemClickListener(this);
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView now = (ImageView) findViewById(R.id.nowPlaying);
+        ImageView now = (ImageView) findViewById(R.id.now_playing);
         now.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
