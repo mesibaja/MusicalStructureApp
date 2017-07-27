@@ -4,38 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/whole_background"
-    tools:context="com.lehoczky.petra.android.musicalstructureapp.MainActivity">
-
-    <LinearLayout
-        style="@style/iconsMagyar"
-        android:layout_below="@+id/question">
-
-        //Folklore
-
-        <ImageView
-            android:id="@+id/nepdalok"
-            style="@style/magyarIcon"
-            android:src="@drawable/nepdalok" />
-
-        <View style="@style/view" />
-
-        //Nursery rhymes
-
-        <ImageView
-            android:id="@+id/gyerekdalok"
-            style="@style/magyarIcon"
-            android:src="@drawable/gyerekdalok" />
-
-        <View style="@style/view" />
-
-        //Poprock
-
-        <ImageView
-            android:id="@+id/poprock"
-            style="@style/magyarIcon"
-            android:src="@drawable/poprock" />
-
-    </LinearLayout>
+    tools:context="com.lehoczky.petra.android.musicalstructureapp.PaymentActivity">
 
     <TextView
         android:id="@+id/payment_description"
@@ -47,13 +16,13 @@
         //Song list
 
         <ImageView
-            android:id="@+id/list"
+            android:id="@+id/playlist"
             style="@style/icons"
             android:src="@drawable/list" />
 
         <View style="@style/view" />
 
-        //Now Buying
+        //Now Buying Activity
 
         <ImageView
             android:id="@+id/now_buying"

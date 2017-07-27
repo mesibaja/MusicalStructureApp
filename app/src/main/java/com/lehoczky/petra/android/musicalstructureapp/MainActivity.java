@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         nepdalok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nepdalokIntent = new Intent(MainActivity.this, com.lehoczky.petra.android.musicalstructureapp.NepdalokActivity.class);
+                Intent nepdalokIntent = new Intent(MainActivity.this, NepdalokActivity.class);
                 startActivity(nepdalokIntent);
             }
         });
@@ -38,28 +38,38 @@ public class MainActivity extends AppCompatActivity {
         poprock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent poprockIntent = new Intent(MainActivity.this, com.lehoczky.petra.android.musicalstructureapp.PoprockActivity.class);
+                Intent poprockIntent = new Intent(MainActivity.this, PoprockActivity.class);
                 startActivity(poprockIntent);
             }
         });
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView list = (ImageView) findViewById(R.id.list);
-        list.setOnClickListener(new View.OnClickListener() {
+        ImageView playlist = (ImageView) findViewById(R.id.playlist);
+        playlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listIntent = new Intent(MainActivity.this, com.lehoczky.petra.android.musicalstructureapp.LibraryActivity.class);
-                startActivity(listIntent);
+                Intent playlistIntent = new Intent(MainActivity.this, LibraryActivity.class);
+                startActivity(playlistIntent);
             }
         });
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView now = (ImageView) findViewById(R.id.nowPlaying);
-        now.setOnClickListener(new View.OnClickListener() {
+        ImageView now_playing = (ImageView) findViewById(R.id.now_playing);
+        now_playing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nowIntent = new Intent(MainActivity.this, com.lehoczky.petra.android.musicalstructureapp.NowPlayingActivity.class);
-                startActivity(nowIntent);
+                Intent now_playingIntent = new Intent(MainActivity.this, NowPlayingActivity.class);
+                startActivity(now_playingIntent);
+            }
+        });
+
+        //find the view, set the onclicklistener, and with new intent start new activity
+        ImageView now_buying = (ImageView) findViewById(R.id.now_buying);
+        now_buying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent now_buyingIntent = new Intent(MainActivity.this, PaymentActivity.class);
+                startActivity(now_buyingIntent);
             }
         });
     }

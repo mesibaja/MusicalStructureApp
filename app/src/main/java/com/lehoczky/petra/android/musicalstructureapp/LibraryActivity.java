@@ -23,28 +23,26 @@ public class LibraryActivity extends AppCompatActivity implements AdapterView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
-        // fill the list with playlists
-        ListView listTracks = (ListView) findViewById(R.id.list_playlists);
+        // fill the list with songs
+        ListView listTracks = (ListView) findViewById(R.id.playlist);
         ArrayList<String> tracks = new ArrayList<String>();
         tracks.add("Búza, búza, búza...");
         tracks.add("Csillagok, csillagok...");
         tracks.add("Hej Dunáról...");
         tracks.add("Tavaszi szél...");
-        tracks.add("Által mennék ln a Tiszán...");
-        tracks.add("Lipem lopom a szőlőt...");
-        tracks.add("A csitári hegyek alatt...");
+        tracks.add("Által mennék én a Tiszán...");
 
         trackAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tracks);
         listTracks.setAdapter(trackAdapter);
         listTracks.setOnItemClickListener(this);
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView now = (ImageView) findViewById(R.id.now_playing);
-        now.setOnClickListener(new View.OnClickListener() {
+        ImageView now_playing = (ImageView) findViewById(R.id.now_playing);
+        now_playing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nowIntent = new Intent(LibraryActivity.this, NowPlayingActivity.class);
-                startActivity(nowIntent);
+                Intent now_playingIntent = new Intent(LibraryActivity.this, NowPlayingActivity.class);
+                startActivity(now_playingIntent);
             }
         });
 
@@ -60,7 +58,7 @@ public class LibraryActivity extends AppCompatActivity implements AdapterView.On
     }
 
     /**
-     * a playlist is clicked, start the playback of the tracks it includes
+     * When the playlist is clicked, start the playback of the tracks it includes
      */
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

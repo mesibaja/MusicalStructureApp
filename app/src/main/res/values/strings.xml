@@ -17,7 +17,7 @@
     <string name="poprock">Válassz poprockot magadnak</string>
 
     //Now playing function
-    <string name="now_playing">This screen is for showing you the playing activity of this app. \n When the music is turned on, it is playing.</string>
+    <string name="playing">This screen is for showing you the playing activity of this app. \n When the music is turned on, it is playing.</string>
 
     //List of the songs
     <string name="list">List of the songs, where you can choose from the list of songs to play. \n You can start playing the songs by clicking the Play Button, you can choose Random playing, \n or hit the previous or the next song button.</string>

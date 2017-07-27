@@ -9,18 +9,15 @@
     //Song list view
 
     <ListView
-        android:id="@+id/list_playlists"
+        android:id="@+id/playlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </ListView>
 
-    //Song list text view
-
     <TextView
         style="@style/description"
         android:text="@string/list" />
-
 
     <LinearLayout style="@style/iconsBottom">
 
@@ -36,7 +33,7 @@
         //Now playing
 
         <ImageView
-            android:id="@+id/nowPlaying"
+            android:id="@+id/now_playing"
             style="@style/icons"
             android:src="@drawable/now_playing" />
     </LinearLayout>

@@ -62,7 +62,7 @@
     <TextView
         android:id="@+id/description"
         style="@style/description"
-        android:text="@string/now_playing" />
+        android:text="@string/playing" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -76,7 +76,7 @@
         <View style="@style/view" />
 
         <ImageView
-            android:id="@+id/list"
+            android:id="@+id/playlist"
             style="@style/icons"
             android:src="@drawable/list" />
     </LinearLayout>

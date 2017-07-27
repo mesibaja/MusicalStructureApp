@@ -27,22 +27,22 @@ public class PaymentActivity extends AppCompatActivity {
         setContentView(R.layout.payment_activity);
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView list = (ImageView) findViewById(R.id.list);
-        list.setOnClickListener(new View.OnClickListener() {
+        ImageView playlist = (ImageView) findViewById(R.id.playlist);
+        playlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listIntent = new Intent(PaymentActivity.this, com.lehoczky.petra.android.musicalstructureapp.LibraryActivity.class);
-                startActivity(listIntent);
+                Intent playlistIntent = new Intent(PaymentActivity.this, LibraryActivity.class);
+                startActivity(playlistIntent);
             }
         });
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView now = (ImageView) findViewById(R.id.now_buying);
-        now.setOnClickListener(new View.OnClickListener() {
+        ImageView now_buying = (ImageView) findViewById(R.id.now_buying);
+        now_buying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nowIntent = new Intent(PaymentActivity.this, PaymentActivity.class);
-                startActivity(nowIntent);
+                Intent now_buyingIntent = new Intent(PaymentActivity.this, PaymentActivity.class);
+                startActivity(now_buyingIntent);
             }
         });
     }

@@ -15,22 +15,22 @@ public class GyerekdalokActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gyerekdalok);
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView list = (ImageView) findViewById(R.id.list);
-        list.setOnClickListener(new View.OnClickListener() {
+        ImageView playlist = (ImageView) findViewById(R.id.playlist);
+        playlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listIntent = new Intent(GyerekdalokActivity.this, com.lehoczky.petra.android.musicalstructureapp.LibraryActivity.class);
-                startActivity(listIntent);
+                Intent playlistIntent = new Intent(GyerekdalokActivity.this, LibraryActivity.class);
+                startActivity(playlistIntent);
             }
         });
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView now = (ImageView) findViewById(R.id.nowPlaying);
-        now.setOnClickListener(new View.OnClickListener() {
+        ImageView now_playing = (ImageView) findViewById(R.id.now_playing);
+        now_playing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nowIntent = new Intent(GyerekdalokActivity.this, NowPlayingActivity.class);
-                startActivity(nowIntent);
+                Intent now_playingIntent = new Intent(GyerekdalokActivity.this, NowPlayingActivity.class);
+                startActivity(now_playingIntent);
             }
         });
     }

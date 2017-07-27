@@ -23,18 +23,18 @@ public class NowPlayingActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent nowIntent = new Intent(NowPlayingActivity.this, MainActivity.class);
-                startActivity(nowIntent);
+                Intent homeIntent = new Intent(NowPlayingActivity.this, MainActivity.class);
+                startActivity(homeIntent);
             }
         });
 
         //find the view, set the onclicklistener, and with new intent start new activity
-        ImageView list = (ImageView) findViewById(R.id.list);
-        list.setOnClickListener(new View.OnClickListener() {
+        ImageView playlist = (ImageView) findViewById(R.id.playlist);
+        playlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent homeIntent = new Intent(NowPlayingActivity.this, LibraryActivity.class);
-                startActivity(homeIntent);
+                Intent playlistIntent = new Intent(NowPlayingActivity.this, LibraryActivity.class);
+                startActivity(playlistIntent);
             }
         });
     }

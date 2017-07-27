@@ -71,7 +71,7 @@
         //Song list
 
         <ImageView
-            android:id="@+id/list"
+            android:id="@+id/playlist"
             style="@style/icons"
             android:src="@drawable/list" />
 
@@ -80,7 +80,7 @@
         //Now playing
 
         <ImageView
-            android:id="@+id/nowPlaying"
+            android:id="@+id/now_playing"
             style="@style/icons"
             android:src="@drawable/now_playing" />
     </LinearLayout>
